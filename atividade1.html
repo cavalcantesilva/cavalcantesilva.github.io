@@ -88,6 +88,45 @@ footer {
     flex-direction: column;
   }
 }
+	
+/* CORES DAS IMAGENS */
+	
+#imgColorida{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+     
+}
+ 
+#imgColorida:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza:hover{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}	
+	
+	
 
 </style>
 </head>
@@ -114,12 +153,14 @@ footer {
 	  <img src="ORIG2.jpg" alt="ORIG2" height="250" width="333"> 
 	  <img src="ORIG3.jpg" alt="ORIG3" height="250" width="333"> 
 	  <img src="ORIG4.jpg" alt="ORIG4" height="250" width="333"> 
-	  <br><br>
 	  
-	  <img src="ORIG1.jpeg" alt="ORIG1" height="250" width="188" -webkit-filter: grayscale(100%); filter: grayscale(100%); filter: gray; /* IE */> 
-	  <img src="ORIG2.jpg" alt="ORIG2" height="250" width="333" -webkit-filter: grayscale(100%); filter: grayscale(100%); filter: gray; /* IE */> 
-	  <img src="ORIG3.jpg" alt="ORIG3" height="250" width="333" -webkit-filter: grayscale(100%); filter: grayscale(100%); filter: gray; /* IE */> 
-	  <img src="ORIG4.jpg" alt="ORIG4" height="250" width="333" -webkit-filter: grayscale(100%); filter: grayscale(100%); filter: gray; /* IE */> 
+	  <br><br>
+	  <p><strong>Imagens em P&B:</strong></p>
+	  <br>
+	  <img id="imgCinza" src="ORIG1.jpeg" alt="ORIG1" height="250" width="188" > 
+	  <img id="imgCinza" src="ORIG2.jpg" alt="ORIG2" height="250" width="333" > 
+	  <img id="imgCinza" src="ORIG3.jpg" alt="ORIG3" height="250" width="333" > 
+	  <img id="imgCinza" src="ORIG4.jpg" alt="ORIG4" height="250" width="333" > 
 	  
 	  
 	  
