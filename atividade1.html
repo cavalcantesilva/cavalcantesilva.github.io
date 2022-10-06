@@ -67,21 +67,45 @@ footer {
     flex-direction: column;
   }
 }
+	ul {
+    
+    width:100%; 
+    float:left; 
+    text-align:center; 
+}
+li {
+    padding-right: 20px;
+    display: inline-block;
+    list-style:none;
+}
+li .mymenu {
+   font-family: 'open_sansbold';
+   font-size:1.6em;
+   text-decoration: none;
+   color:#4c4c4c;
+   -webkit-border-box: 0 1px 0 0 #4c4c4c;
+   border-bottom: 4px solid transparent;
+   -webkit-transition: border-bottom .3s linear;
+}
+li .mymenu:hover {
+    
+    border-bottom:4px solid #4c4c4c;
+}
+
 </style>
 </head>
 <body>
 
 <header>
-  <h2>Atividades em grupo</h2>
+  <h2>Atividades de laboratório</h2>
 </header>
 
-<nav class="menu">
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="atividade1.html">Atividade 1</a></li>
-    <li><a href="atividade2.html">Atividade 2</a></li>
+    <li><a href="index.html" class="mymenu" title="Home">Home</a></li>
+    <li><a href="atividade1.html" class="mymenu" title="Atividade 1">Atividade 1</a></li>
+    <li><a href="atividade1.html" class="mymenu" title="Atividade 2">Atividade 2</a></li>
   </ul>
-</nav>
+
  <nav>
 <section> 
   <article>
