@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Página de equipe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    
+    width:100%; 
+    float:left; 
+    text-align:center; 
+}
+li {
+    padding-right: 20px;
+    display: inline-block;
+    list-style:none;
+}
+li .mymenu {
+   font-family: 'open_sansbold';
+   font-size:1.6em;
+   text-decoration: none;
+   color:#4c4c4c;
+   -webkit-border-box: 0 1px 0 0 #4c4c4c;
+   border-bottom: 4px solid transparent;
+   -webkit-transition: border-bottom .3s linear;
+}
+li .mymenu:hover {
+    
+    border-bottom:4px solid #4c4c4c;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+	
+/* CORES DAS IMAGENS */
+	
+#imgColorida{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+     
+}
+ 
+#imgColorida:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza:hover{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}	
+	
+	
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Atividades de laboratório</h2>
+</header>
+
+  <ul>
+    <li><a href="index.html" class="mymenu" title="Home">Home</a></li>
+    <li><a href="atividade1.html" class="mymenu" title="Atividade 1">Atividade 1</a></li>
+    <li><a href="atividade2.html" class="mymenu" title="Atividade 2">Atividade 2</a></li>
+  </ul>
+
+ <nav>
+<section> 
+  <article>
+    <h1>Atividade 2</h1>
+
+	  <h2><strong>Atividade 2&nbsp;</strong></h2>
+	  <p><strong>Imagens :</strong></p>
+	  <p>Nessa parte do relatório.</p>
+	  <p>As fotos mostram os integrantes Caleb, Gabriel, Vitor e Beatriz, respectivamente.</p>
+	  <p>
+		<audio controls="">
+  		<source src="imagens-originais.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <img src="ORIG1.jpeg" alt="ORIG1" height="250" width="188"> 
+	  <img src="ORIG2.jpg" alt="ORIG2" height="250" width="333"> 
+	  <img src="ORIG3.jpg" alt="ORIG3" height="250" width="333"> 
+	  <img src="ORIG4.jpg" alt="ORIG4" height="250" width="333"> 
+
+	  <br><br>
+	  <p><strong>Avatar:</strong></p>
+	  <br>
+	  <p>Aqui mostramos os avatares escolhidos por cada integrante.</p>
+	  <p>Novamente, a ordem dos avatares mostram os integrantes Caleb, Gabriel, Vitor e Beatriz, respectivamente.</p>
+	  <p>
+		<audio controls="">
+  		<source src="avatar.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <img src="avatar-caleb.png" alt="avatar" height="250" width="188" > 
+	  <img src="avatar-gabriel.png" alt="avatar" height="250" width="333" > 
+	  <img src="avatar-vitor.png" alt="avatar" height="250" width="333" > 
+	  <img src="videl-avatarbia.png" alt="avatar" height="250" width="333" > 
+	  
+	  <br><br>
+	  <p><strong>Imagens em P&B (ao passar o mouse):</strong></p>
+	  <br>
+	  <p>Nessa seção, fizemos o primeiro tratamento de imagens do relatório e exibimos as fotos dos integrantes em preto e branco.</p>
+	  <p>Para tal, a escolha do grupo foi realizar o tratamento direto na página html, utilizando CSS para realizar a transição da imagem em cores para a imagem em p&b.</p>
+	  <p>Passe o mouse por cima e veja a transição.</p>
+	  <p>
+		<audio controls="">
+  		<source src="imagens-p&b.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <img id="imgCinza" src="ORIG1.jpeg" alt="ORIG1_pb" height="250" width="188" > 
+	  <img id="imgCinza" src="ORIG2.jpg" alt="ORIG2_pb" height="250" width="333" > 
+	  <img id="imgCinza" src="ORIG3.jpg" alt="ORIG3_pb" height="250" width="333" > 
+	  <img id="imgCinza" src="ORIG4.jpg" alt="ORIG4_pb" height="250" width="333" > 
+
+	  <br><br>
+	  <p><strong>Imagens em Menor Definição:</strong></p>
+	  <br>
+	  <p>Nessa seção, fizemos o segundo tratamento de imagens do relatório e exibimos as fotos dos integrantes em menor resolução.</p>
+	  <p>Para tal, a escolha do grupo foi realizar o tratamento manualmente.</p>
+	  <p>
+		<audio controls="">
+  		<source src="menor-resolução.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <img src="BAIXA1.png" alt="baixa1" height="250" width="188" > 
+	  <img  src="BAIXA2.png" alt="baixa2" height="250" width="333" > 
+	  <img  src="BAIXA3.png" alt="baixa3" height="250" width="333" > 
+	  <img  src="BAIXA4.png" alt="baixa4" height="250" width="333" > 
+	  
+	  <p><strong>Imagens da Câmera:</strong></p>
+	  <br>
+	  <p>Nessa parte do relatório, apresentamos as fotos tiradas de cada integrante com a câmera profissional.</p>
+	  <p>Nota-se uma diferença considerável de resolução e de cores em comparação com as fotos tiradas pelo celular.</p>
+	  <p>Provavelmente a câmera apresentou uma resolução menor que o celular por ela estar configurada no modo de vídeo. Tiramos fotos no ambiente controlado e iluminado, porém a configuração no modo de vídeo provavelmente privilegia frames em detrimento da resolução.</p>
+	  <p>O integrante Caleb faltou no laboratório nesse dia. Por conta disso, mantivemos a mesma imagem do celular.</p>
+	  <p>
+		<audio controls="">
+  		<source src="imagens-camera.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <img src="ORIG1.jpeg" alt="cam1" height="250" width="188" > 
+	  <img  src="cam2.jpg" alt="cam2" height="250" width="333" > 
+	  <img  src="cam3.jpg" alt="cam3" height="250" width="333" > 
+	  <img  src="cam4.jpg" alt="cam4" height="250" width="333" >
+	  
+	  <br><br>
+	  <p><strong>Imagens da câmera em P&B (ao passar o mouse):</strong></p>
+	  <br>
+	  <p>Nessa seção, fizemos tratamento de imagens em preto e branco para as fotos tiradas pela câmera.</p>
+	  <p>Novamente, o grupo escolheu realizar o tratamento direto na página html, utilizando CSS para realizar a transição da imagem em cores para a imagem em p&b.</p>
+	  <p>Nota-se uma diferença considerável na luminosidade em relação às fotos p&b do celular.</p>
+	  <p>
+		<audio controls="">
+  		<source src="camera-p&b.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <img id="imgCinza" src="ORIG1.jpeg" alt="ORIG1_pb" height="250" width="188" > 
+	  <img id="imgCinza" src="cam2.jpg" alt="ORIG2_pb" height="250" width="333" > 
+	  <img id="imgCinza" src="cam3.jpg" alt="ORIG3_pb" height="250" width="333" > 
+	  <img id="imgCinza" src="cam4.jpg" alt="ORIG4_pb" height="250" width="333" > 
+	  
+	   <br><br>
+	  <p><strong>Foto do Grupo:</strong></p>
+	  <br>
+	  <p>Aqui mostramos a foto do grupo.</p>
+	  <p>
+		<audio controls="">
+  		<source src="grupo.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <img src="foto-grupo.jpg" alt="grupo" width="480" >  
+	  
+	   <br><br>
+	  
+	  <p><strong>Vídeo de apresentação</strong></p>
+	  <br>
+	  <p>Vídeo de apresentação do grupo</p>
+	  <p>
+		<audio controls="">
+  		<source src="grupovideo.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <p>
+		<video width="400" controls="">
+  		<source src="grupo.mp4" type="video/mp4">
+  		Your browser does not support HTML video.
+		</video>
+	</p>
+	  
+	   <br><br>
+	  
+	  <p><strong>Vídeo com resolução reduzida</strong></p>
+	  <br>
+	  <p>Nessa seção, reduzimos a resolução do vídeo em 25%. O método utilizado foi através de softwares que convertem para a resolução desejada.</p>
+	  <p>Para essa resolução, não se nota uma perda grande de resolução.</p>
+	  <p>
+		<audio controls="">
+  		<source src="grupovideo25.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <p>
+		<video width="400" controls="">
+  		<source src="grupo - 25.mp4" type="video/mp4">
+  		Your browser does not support HTML video.
+		</video>
+	</p> 
+	  
+	   <br><br>
+	  
+	<p><strong>Vídeo com resolução mais reduzida</strong></p>
+	  <br>
+	  <p>Nessa seção, reduzimos a resolução do vídeo em 50%. Novamente, o método utilizado foi através de softwares que convertem para a resolução desejada.</p>
+	  <p>Aqui já se nota uma perda drástica de resolução.</p>
+	  <p>
+		<audio controls="">
+  		<source src="grupovideo50.ogg" type="audio/ogg">
+		Your browser does not support the audio element.
+		</audio>
+	  </p>
+	  <p>
+		<video width="400" controls="">
+  		<source src="grupo - 50.mp4" type="video/mp4">
+  		Your browser does not support HTML video.
+		</video>
+	</p>
+	  
+	   <br><br>
+	  
+	  
+</nav>
+
+<style>
+div.box {
+	width: 260px;
+	display: inline-block;
+}
+</style>
+	
+  </article>
+</section>
+
+<footer>
+  <p>Santo André</p>
+  <p>2022 </p>
+</footer>
+
+</body>
+</html>
