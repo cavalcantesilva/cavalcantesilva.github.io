@@ -226,9 +226,11 @@ Depois a imagem original é lida e se plotam os coeficientes do nível 2, assim 
 	  <img src="vitor Teste das Funções de Multiresolução wavedec2() e waverec2().png" alt="rgb" height="350" width="750" >
 
 	  <br><br>
-	  <p><strong>Imagens de "Montagem" com wavedec2() e wavedecn():</strong></p>
-	  <p>Explicação<p>
-	  <p>Análise de resultados: <p>
+	  <p><strong>Imagens da "Montagem" com wavedec2() e wavedecn():</strong></p>
+	  <p>No 1º Nível, monta-se a matriz das matrizes, copiando seus elementos
+No 2º Nível a mesma coisa, monta-se a matriz das matrizes, copiando seus elementos, a matriz final completa é chamada de CA1 e CC, após isso a figura é plotada.
+<p>
+	  <p>Análise de resultados: A imagem fica bem escura por uma questão de contraste do próprio python<p>
 	  <p><p>
 	  <p></p>
 	  <p>
@@ -245,7 +247,9 @@ Depois a imagem original é lida e se plotam os coeficientes do nível 2, assim 
 	  
 	  <br><br>
 	  <p><strong>Reconstrução de Imagem Colorida</strong></p>
-	  <p><p>
+	  <p> imagem original é lida e depois codificada por planos de cor, começando pelo plano vermelho.
+O coeficiente se dá primeiramente lendo a imagem, as configurações se seguem com o plano 0 (vermelho) definido com o tipo haar e o modo de filtros “periodization”, depois, separa-se os coeficientes cH, cV e cD para formar a IDWT. Em seguida é feito o plot da imagem com seus coeficientes de aproximação, bordas verticais, horizontais e diagonais, para que possa ser feito o plot da imagem reconstruída. As mesmas coisas são repetidas nos planos Verde e Azul, com a diferença que o plano 1 é o Verde e o plano 2 é o Azul e os parâmetros mudam de acordo com a sua determinada cor.
+<p>
 	  <p>Análise de resultados: <p>
 	  <p></p>
 	  <p>
@@ -270,7 +274,10 @@ Depois a imagem original é lida e se plotam os coeficientes do nível 2, assim 
 	  
 	  <br><br>
 	  <p><strong>Reconstrução da Imagem colorida e Cálculo da MSE de cada plano de cor e da PSNR total</strong></p>
-	  <p>Explicação<p>
+	  <p>Primeiro os planos 0 (vermelho), 1 (verde) e 2 (azul), foram copiados para uma nova matriz, em que cada componente (R, B e G), recebeu a sua cor respectiva.
+Para o cálculo da MSE foi usado o erro quadrático médio em cada plano e para o cálculo da SNR de pico (PSNR) foi usada a expressão logarítmica descrita .
+Em seguida a imagem reconstruída com PSNR total foi plotada.
+<p>
 	  <p><p>
 	  <p>Análise de resultados: <p>
 	  <p></p>
