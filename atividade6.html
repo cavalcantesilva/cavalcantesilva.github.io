@@ -1,1 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Página de equipe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    
+    width:100%; 
+    float:left; 
+    text-align:center; 
+}
+li {
+    padding-right: 20px;
+    display: inline-block;
+    list-style:none;
+}
+li .mymenu {
+   font-family: 'open_sansbold';
+   font-size:1.6em;
+   text-decoration: none;
+   color:#4c4c4c;
+   -webkit-border-box: 0 1px 0 0 #4c4c4c;
+   border-bottom: 4px solid transparent;
+   -webkit-transition: border-bottom .3s linear;
+}
+li .mymenu:hover {
+    
+    border-bottom:4px solid #4c4c4c;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+	
+/* CORES DAS IMAGENS */
+	
+#imgColorida{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+     
+}
+ 
+#imgColorida:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza:hover{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}	
+	
+	
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Atividades de laboratório</h2>
+</header>
+
+  <ul>
+    <li><a href="index.html" class="mymenu" title="Home">Home</a></li>
+    <li><a href="atividade1.html" class="mymenu" title="Atividade 1">Atividade 1</a></li>
+    <li><a href="atividade2.html" class="mymenu" title="Atividade 2">Atividade 2</a></li>
+    <li><a href="atividade3.html" class="mymenu" title="Atividade 3">Atividade 3</a></li>
+    <li><a href="atividade4.html" class="mymenu" title="Atividade 4">Atividade 4</a></li>
+    <li><a href="atividade5.html" class="mymenu" title="Atividade 5">Atividade 5</a></li>
+  </ul>
+
+ <nav>
+<section> 
+  <article>
+
+	  <h2><strong>Atividade 5&nbsp;</strong></h2>
+	  <p><strong>Características Tempo e Frequência da Voz</strong></p>
+	  <p><strong>1 - Separação de uma Estrofe</strong></p>
+	  <p>A partir da gravação das frases, o objetivo dessa parte é separar uma estrofe da frase total a partir da forma de onda:</p>
+    
+    
+    <p>
+      <i><b>i. Frase completa:</b></i><p>
+      <b>- Beatriz</b></p>
+		<audio controls="">
+  	<source src="frasebia.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+    <p><img src="Voz da Veatriz.png" alt="Forma de Onda" width="600"></p>
+  
+      <b>- Caleb</b></p>
+		<audio controls="">
+  	<source src="frasecaleb.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+    <p><img src="Voz do caleb.png" alt="Forma de Onda" width="600"></p>
+  
+      <b>- Vitor</b></p>
+		<audio controls="">
+  	<source src="frasevitor.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+    <p><img src="Voz do vitor.png" alt="Forma de Onda" width="600"></p>
+   
+   
+    <p>
+	    <br><br>
+      <i><b>ii. RA:</b></i>
+    <p><b>-RA 11046815</b></p>
+      &nbsp;&nbsp;&nbsp;Microfone capacitivo Behinger
+		<audio controls="">
+  	<source src="RA11046815.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      &nbsp;&nbsp;&nbsp;Microfone dinâmico Shure
+		<audio controls="">
+  	<source src="RA11046815_preto.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+    <p><b>
+	    <br>
+      -RA 11201720090</b></p>
+      &nbsp;&nbsp;&nbsp;Microfone capacitivo Behinger
+		<audio controls="">
+  	<source src="RA11201720090.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      &nbsp;&nbsp;&nbsp;Microfone dinâmico Shure
+		<audio controls="">
+  	<source src="RA11201720090_preto.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+        <p><b>
+		<br>
+      -RA 11111215</b></p>
+      &nbsp;&nbsp;&nbsp;Microfone capacitivo Behinger
+		<audio controls="">
+  	<source src="RA11111215.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      &nbsp;&nbsp;&nbsp;Microfone dinâmico Shure
+		<audio controls="">
+  	<source src="RA11111215_preto.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+    <p>
+	    <br><br>
+      <p><strong>2 - Gravações das frases e dos versos</strong>
+      <p><i><b>i. Gravação da frase 1, análise de forma de onda e espectrograma:</b></i> </p>
+    <p>
+	    <br>
+	    Áudio do integrante Vitor </p>
+      Microfone capacitivo Behinger:
+		<audio controls="">
+  	<source src="frasevitor.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      <p><img src="EspectrogramaVitorCapacitivo.PNG" alt="Espectrograma do Microfone Capacitivo" width="600"></p>
+      Microfone dinâmico Shure:
+		<audio controls="">
+  	<source src="frasevitor_preto.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      <p><img src="EspectrogramaVitorShure.PNG" alt="Espectrograma do Microfone Shure" width="600"></p>
+      <p><i><b>ii. Comparação do Espectrograma da Música com a nossa gravação</b></i> </p>
+	 </p>
+		<br>
+      Comparando o espectrograma do integrante Caleb com o da música:</p>
+      <p><img src="EspectrogramaAdriana.PNG" alt="Espectrograma da Música" width="600"></p>
+      Espectrograma de Adriana Calcanhoto</p>
+      <p><img src="EspectrogramaCaleb.PNG" alt="Espectrograma do Caleb" width="600"></p>
+      Espectrograma do Caleb</p>
+      <p>Podemos perceber uma diferença nos áudios principalemente na questão de densidade de frequências e onde se localizam. Perceba que o áudio da música aparenta estar mais "denso", enquanto o do Caleb fica mais na parte de frequências baixas. Isso se deve ao fato da música conter voz e instrumentos, enquanto que a voz se concentra em um Pitch.</p>
+    
+	<br><br>
+      <p><i><b>iii. Gravação do verso de Camões</b></i> </p>
+      Comparando o espectrograma de dois integrantes:</p>
+        <p>
+      <b>- Beatriz</b></p>
+      Microfone capacitivo Behinger
+		<audio controls="">
+  	<source src="versobia.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      <p><img src="versobiacapacitivo.PNG" alt="Espectrograma do Microfone Capacitivo" width="600"></p>
+      Microfone dinâmico Shure
+		<audio controls="">
+  	<source src="versobia_preto.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      <p><img src="versobiashure.PNG" alt="Espectrograma do Microfone Shure" width="600"></p>
+	<br>
+      <b>- Vitor</b></p>
+      Microfone capacitivo Behinger
+		<audio controls="">
+  	<source src="versovitor.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      <p><img src="versovitorcapacitivo.PNG" alt="Espectrograma do Microfone Capacitivo" width="600"></p>
+      Microfone dinâmico Shure
+		<audio controls="">
+  	<source src="versovitor_preto.ogg" type="audio/ogg">
+		</audio>
+	  </p>
+      <p><img src="versovitorshure.PNG" alt="Espectrograma do Microfone Capacitivo" width="600"></p>
+	<br>
+      <p>Pode-se perceber algo similar ao que ocorreu na música, os áudios da integrante Beatriz variam mais em frequência ao longo do tempo, não tendo uma em específico onde ocorre. Os áudios do integrante Vitor também variam, mas apresentam uma tendência maior nas frequências mais baixas</p>
+	  <br><br>
+	  <br>
+      <p><i><b>iv. Gravação da música</b></i> </p>
+        <p>
+		<audio controls="">
+  	<source src="musica.ogg" type="audio/ogg">
+		</audio>
+	   </p>
+      <p><img src="EspectrogramamMusica.PNG" alt="Espectrograma da música" width="600"></p>
+		
+		<br><br>
+		
+	Fonema Ca de <caleb> (Voz do Caleb): Consoante Surda Plosiva<br>
+	<img src="ca_caleb.png" alt="Voz Caleb" width=730 height=284> <br>
+	Pitch Caleb: 1,51 ms <br>
+	Frequência Fundamental Caleb: 662 Hz <br>
+
+	<br>
+		
+	Fonema Be de <beatriz> (Voz Beatriz): Consoante Sonora<br>
+	<img src="be_beatriz.png" alt="Voz Caleb" width=753 height=285> <br>
+	<br>		
+
+	Fonema Si de <Silva> (Voz Beatriz): Consoante Surda<br>
+	<img src="si_silva.png" alt="Voz Caleb"> <br>
+	<br>	
+
+	
+	  <br><br>
+	  <br>
+<p><strong>3 - Prosódia</strong>
+<p>A prosódia define e reune as características da emissão dos sons ao falar, como acento, entonação de voz e tonalidade, até mesmo timbre do indivíduo. 
+  como o acento e a entoação Qual a
+  diferença entre voz falada normal, em verso, ou em música neste conceito?</p>
+<p>R: Podemos verificar a diferença entre os dois observando que voz falada normal não apresenta muita variabilidade tonal, tal como a voz em verso, diferentemente da voz cantada. Já em questão de ritmo é um pouco mais complexo, cada língua pode apresentar um ritmo diferente. Geralmente, divide-se em ritmo silábico, moraico e acentual. Isso para voz falada, para voz em verso ou cantada, os processos são similares por conta das estruturas de tempo.</p>
+<br>	
+
+	
+	  <br><br>
+	  <br>
+<p><strong>4 - Eletroglotograma</strong>
+    <p>Não foi possível realizar o eletrograma devido tempo disponível para a realização do laboratório, bem como materiais.</p>
+    
+    
+    
+	   <br><br>
+	  
+	  
+</nav>
+
+<style>
+div.box {
+	width: 260px;
+	display: inline-block;
+}
+</style>
+	
+  </article>
+</section>
+
+<footer>
+  <p>Santo André</p>
+  <p>2022 </p>
+</footer>
+
+</body>
+</html>
