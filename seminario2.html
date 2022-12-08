@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Página de equipe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    
+    width:100%; 
+    float:left; 
+    text-align:center; 
+}
+li {
+    padding-right: 20px;
+    display: inline-block;
+    list-style:none;
+}
+li .mymenu {
+   font-family: 'open_sansbold';
+   font-size:1.6em;
+   text-decoration: none;
+   color:#4c4c4c;
+   -webkit-border-box: 0 1px 0 0 #4c4c4c;
+   border-bottom: 4px solid transparent;
+   -webkit-transition: border-bottom .3s linear;
+}
+li .mymenu:hover {
+    
+    border-bottom:4px solid #4c4c4c;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+	
+/* CORES DAS IMAGENS */
+	
+#imgColorida{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+     
+}
+ 
+#imgColorida:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza:hover{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}	
+	
+	
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Atividades de laboratório</h2>
+</header>
+
+  <ul>
+    <li><a href="index.html" class="mymenu" title="Home">Home</a></li>
+    <li><a href="atividade1.html" class="mymenu" title="Atividade 1">Atividade 1</a></li>
+    <li><a href="atividade2.html" class="mymenu" title="Atividade 2">Atividade 2</a></li>
+    <li><a href="atividade3.html" class="mymenu" title="Atividade 3">Atividade 3</a></li>
+    <li><a href="atividade4.html" class="mymenu" title="Atividade 4">Atividade 4</a></li>
+    <li><a href="atividade5.html" class="mymenu" title="Atividade 5">Atividade 5</a></li>
+    <li><a href="atividade6.html" class="mymenu" title="Atividade 6">Atividade 6</a></li>
+    <li><a href="atividade7.html" class="mymenu" title="Atividade 7">Atividade 7</a></li>
+        <li><a href="seminario2.html" class="mymenu" title="Seminário 2">Seminário 2</a></li>
+  </ul>
+
+ <nav>
+<section> 
+  <article>
+
+	  <h2><strong>Seminário 2&nbsp;</strong></h2>
+
+	  <p><strong>Parte 1 - Testes de Acuidade Visual na Comunidade Externa:</strong></p><br>
+	  <p>Para a realização do teste, foi utilizado o site https://hearingtest.online/ todos os membros da equipe devem realizar
+em si mesmo o teste de audiometria num computador/notebook com saída de som satisfatório. No estudo em questão foram medidos os áudiso da comunidade externa</p>
+    
+    
+    <p>
+	 <br>
+	  Aqui temos os resultados de audiomatria segregados por idade, onde em verde temos o resultado com o som sendo emitido em duas orelhas, azul somente no lado esquerdo e vermelho somente o lado direito.<br><br>
+	    <br><br>
+      <i><b>Publico de 21 a 25 anos: Apresentou uma compensação em um dos lados de emissão do som, no entanto se manteve entre a audição normal até a audição leve</b></i>
+    <p><img src="aud_1.png" alt="Audiograma - pessoa 1" ></p>
+        <p><img src="aud_2.png" alt="Audiograma - pessoa 2" ></p>
+	    <i><b>Publico de 26 a 30 anos: No geral foi possível notar uma perda de audição leve, com compensações de acordo com a frequência emitida. Por exemplo, na primeira imagem temos o audiograma da integrante Beatriz a qual apresentou uma audição melhor em até 1kHz sendo realizadas pelo lado esquerdo e acima disso, pelo lado direito. </b></i>
+    <p><img src="aud_bia.png" alt="Audiograma - Beatriz" ></p>
+	    <i><b>Publico de 31 a 35 anos:</b></i>
+	  
+	  <br><br>
+ <p><strong>Parte 2 - Desenvolvimento de Projeto de Audio/Voz :</strong></p><br>
+    <p>Descrição </p>
+    
+    
+	  <h4><strong>Rádio&nbsp;</strong></h4>
+	   <p>Surgindo em 1896, podemos concentrar o mesmo como modelo de sistemas de transmissão da informação, o canal é responsável por fazer a ligação entre o transmissor e receptor; e pode ser do tipo não guiado, como a atmosfera, ou do tipo guiado, como os cabeamentos.
+Com isso, a modulação define-se por uma técnica de conversão de sinais para fins de transmissão, a qual recebe duas entradas, informação e portadora, e fornece um sinal de saída para o transporte da informação. A modulação tem por características a redução de ruído, de interferências e a facilidade de irradiação eletromagnética. Já a demodulação se dá pelo processo inverso da modulação, onde sua finalidade é recuperar a informação no receptor de destino.
+</p> 
+    <p><img src="radio1.png" alt="Processo de modulção, transmissão e demodulação de ondas de rádio" ></p>
+    <p> Nós temos dois tipos de modulação. Na modulação de amplitude (AM), a onda de rádio portadora é gerada com amplitude e freqüência constantes. Depois disso, a onda portadora é modificada pela introdução de uma onda, proveniente do microfone. As variações de amplitude da onda proveniente do microfone ficam, então, “impressas” sobre a onda portadora. O processo de produção do sinal que é efetivamente enviado pela antena transmissora é chamado modulação. As estações emissoras de ondas de rádio que se utilizam da modulação de amplitude para transmitir informações são chamadas de estações de rádio AM (ou Amplitude Modulada).
+No caso das emissões de FM, o sinal modulador interfere na produção do sinal portador produzindo variações em sua frequência. A modificação na frequência da onda portadora é determinada tanto pela amplitude quanto pela própria freqüência do sinal proveniente do microfone. O sinal resultante ou “sinal modulado” é diferente do que se obtém na modulação do tipo AM. Na modulação FM o sinal modulado apresenta uma amplitude constante.
+
+tanto na modulação por amplitude quanto na modulação por freqüência, os sinais elétricos provenientes do microfone têm freqüência muito menor que a freqüência do sinal portador.
+A enorme diferença entre as freqüências do sinal portador e do sinal modulador é importante, pois facilita a “separação” desses dois sinais pelo aparelho receptor. Essa “separação” ou decomposição recebe o nome de demodulação. Com a demodulação, o sinal modulador produzido pelo microfone do locutor, lá na estação emissora de rádio, pode ser amplificado e conduzido ao alto-falante do aparelho receptor.
+ </p>
+    <p><img src="am.png" alt="Ondas AM" ></p>
+    <p><img src="fm.png" alt="Ondas FM" ></p>
+	  
+    <p> Além da codificação de fonte, temos a codificação de canal, também chamada de detecção e correção de erros, que é a codificação de sinais de informação que diminuem a taxa de erro de bit no canal de transmissão.
+São dois os tipos de códigos corretores e detectores de erros: código de bloco e código cíclico/convolucional. A potencialidade desses códigos foi instituída a partir do Teorema da Codificação de Shannon, para um canal ruidoso:
+“Para qualquer canal sem memória, cuja entrada é um alfabeto discreto, existem códigos com taxa de informação R (nats/símbolo), com palavras de comprimento n dígitos, para os quais a probabilidade de erro, para o caso de decodificação por máxima verossimilhança, é limitada por Pe < e1-nE(R), em que E(R)>0, 0≤R<C, uma função convexa-U, decrescente, especificada pelas probabilidades de transição do canal; C é a capacidade do canal.” </p>
+	  
+     	  <h4><strong>Referências:&nbsp;</strong></h4> 
+      <p>A. J. Viterbi, "When Not to Spread Spectrum - A Sequel". IEEE Communications Magazine, 23(4):12-17 (1985).</p>
+</nav>
+
+<style>
+div.box {
+	width: 260px;
+	display: inline-block;
+}
+</style>
+	
+  </article>
+</section>
+
+<footer>
+  <p>Santo André</p>
+  <p>2022 </p>
+</footer>
+
+</body>
+</html>
