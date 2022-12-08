@@ -207,18 +207,29 @@ São dois os tipos de códigos corretores e detectores de erros: código de bloc
 </p> 
 	    <p><img src="vinil.jpg" alt="vinil" ></p><br> 
 <p>Funciona basicamente utilizando uma haste com uma agulha em uma ponta e um imã dentro de um recepiente com espiras na outra.
+</p>
+
+<p>
 A forma de onda do áudio gravado é literalmente impressa no disco em uma espiral de 6 micrômetros. A agulha é sensível às variações de movimento, o que faz o imã na outra extremidade se movimentar e gerar um sinal elétrico que depois é transmitido em um aparelho de som.
 Existem três tipos de modulação (maneiras de se imprimir a onda) para o vinil: Vertical, horizontal e ambas combinadas. A combinação das duas possibilita o som estéreo.
 </p>
 	    <p><img src="Capturar2.PNG" alt="Modulações" ></p><br>
 	    <p><img src="Capturar3.PNG" alt="haste" ></p><br>
-<p>Para modulações mono, isto é, de apenas um canal, a função de onda é apenas uma e é considerada como vertical ou horizontal dependendo do tipo de modulação:
-f(t) = y(t) - modulação vertical
-f(t) = x(t) - modulação horizontal
-No caso da modulação estéreo, a função g(t) final é dada por uma combinação linear de dois vetores. No caso de áudio, um representa o lado esquerdo e o outro o direito:
-g(t) = [x(t), y(t)] em que:
-	x(t) = L(t0 - R(t);
-	y(t) = L(t) + R(t)
+	 
+<p>Para modulações mono, isto é, de apenas um canal, a função de onda é apenas uma e é considerada como vertical ou horizontal dependendo do tipo de modulação:</p>
+	    <p>f(t) = y(t) - modulação vertical</p>
+	    <p>f(t) = x(t) - modulação horizontal</p>
+<p>No caso da modulação estéreo, a função g(t) final é dada por uma combinação linear de dois vetores. No caso de áudio, um representa o lado esquerdo e o outro o direito:</p>
+	<p>g(t) = [x(t), y(t)] em que:</p>
+	<p>x(t) = L(t0 - R(t);</p>
+	<p>y(t) = L(t) + R(t)</p>
+<p>É possível adicionar mais canais para se igualar ao Dolby 5.1, por exemplo, que utiliza 6 canais. Para isso, precisaríamos utilizar 3 agulhas (cada uma com dois canais) ou utilizar uma função perfil e séries de Fourier para mapear todas as funções nos dois canais, conforme decrito abaixo:
+</p>
+	    <p><img src="Capturar4.PNG" alt="funções" ></p><br>
+	    <p><img src="Capturar5.PNG" alt="funções" ></p><br>
+<p>Ambas as soluções são complexas
+Para as agulhas, teríamos que ter vinis maiores ou ranhuras menores (na casa de centenas de nanômetros) o que poderia invibilizar a comercialização.
+Já para o mapeamento de funções, seria necessário um transdutor contínuo na direção transversa, o que possivelmente precisaria de quantização e inviabilizaria a comercialização também
 </p>
 	    
 	  <h4><strong>CD&nbsp;</strong></h4>
