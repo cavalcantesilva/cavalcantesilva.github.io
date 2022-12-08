@@ -164,20 +164,20 @@ em si mesmo o teste de audiometria num computador/notebook com saída de som sat
 	  Aqui temos os resultados de audiomatria segregados por idade, onde em verde temos o resultado com o som sendo emitido em duas orelhas, azul somente no lado esquerdo e vermelho somente o lado direito.<br><br>
 	    <br><br>
       <i><b>Publico de 21 a 25 anos: Apresentou uma compensação em um dos lados de emissão do som, no entanto se manteve entre a audição normal até a audição leve</b></i>
-    <p><img src="aud_1.png" alt="Audiograma - pessoa 1" ></p>
-        <p><img src="aud_2.png" alt="Audiograma - pessoa 2" ></p>
-	  <p><img src="teste1.JPG" alt="Audiograma - Caleb" ></p>
-	  <p><img src="audiometria-vitor.PNG" alt="Audiograma - Vitor" ></p>
+    <p><img src="aud_1.png" alt="Audiograma - pessoa 1" height="457" width="620"></p>
+        <p><img src="aud_2.png" alt="Audiograma - pessoa 2" height="457" width="620"></p>
+	  <p><img src="teste1.JPG" alt="Audiograma - Caleb" height="457" width="620"></p>
+	  <p><img src="audiometria-vitor.PNG" alt="Audiograma - Vitor" height="457" width="620"></p>
 	    <i><b>Publico de 26 a 30 anos: No geral foi possível notar uma perda de audição leve, com compensações de acordo com a frequência emitida. Por exemplo, na primeira imagem temos o audiograma da integrante Beatriz a qual apresentou uma audição melhor em até 1kHz sendo realizadas pelo lado esquerdo e acima disso, pelo lado direito. </b></i>
-    <p><img src="aud_bia.png" alt="Audiograma - Beatriz" ></p>
-	  <p><img src="teste2.JPG" alt="Audiograma - pessoa 3" ></p>
-	  <p><img src="audiogram26-30.png" alt="Audiograma - pessoa 4" ></p>
+    <p><img src="aud_bia.png" alt="Audiograma - Beatriz" height="457" width="620"></p>
+	  <p><img src="teste2.JPG" alt="Audiograma - pessoa 3" height="457" width="620"></p>
+	  <p><img src="audiogram26-30.png" alt="Audiograma - pessoa 4" height="457" width="620"></p>
 	    <i><b>Publico de 31 a 35 anos:Houve uma perda leve de audição, compensada pelo ouvido direito.</b></i>
-    <p><img src="audiogab1.jpeg" alt="Audiograma - 31-35" ></p>
-	  <p><img src="teste3.JPG" alt="Audiograma - pessoa 5" ></p>
+    <p><img src="audiogab1.jpeg" alt="Audiograma - 31-35" height="457" width="620"></p>
+	  <p><img src="teste3.JPG" alt="Audiograma - pessoa 5" height="457" width="620"></p>
 	    <i><b>Publico de 36 a 40 anos: Observa-se uma leve perda de audição. Há uma compensação pelo ouvido esquerdo na faixa dos 2 KHz </b></i>
-    <p><img src="audiogab2.jpeg" alt="Audiograma - 36-40" ></p>
-	   <p><img src="audiogram36-40.png" alt="Audiograma - pessoa 6" ></p>
+    <p><img src="audiogab2.jpeg" alt="Audiograma - 36-40" height="457" width="620"></p>
+	   <p><img src="audiogram36-40.png" alt="Audiograma - pessoa 6" height="457" width="620"></p>
 
 	  <br><br>
  <p><strong>Parte 2 - Desenvolvimento de Projeto de Audio/Voz :</strong></p><br>
@@ -207,29 +207,18 @@ São dois os tipos de códigos corretores e detectores de erros: código de bloc
 </p> 
 	    <p><img src="vinil.jpg" alt="vinil" ></p><br> 
 <p>Funciona basicamente utilizando uma haste com uma agulha em uma ponta e um imã dentro de um recepiente com espiras na outra.
-</p>
-
-<p>
 A forma de onda do áudio gravado é literalmente impressa no disco em uma espiral de 6 micrômetros. A agulha é sensível às variações de movimento, o que faz o imã na outra extremidade se movimentar e gerar um sinal elétrico que depois é transmitido em um aparelho de som.
 Existem três tipos de modulação (maneiras de se imprimir a onda) para o vinil: Vertical, horizontal e ambas combinadas. A combinação das duas possibilita o som estéreo.
 </p>
 	    <p><img src="Capturar2.PNG" alt="Modulações" ></p><br>
 	    <p><img src="Capturar3.PNG" alt="haste" ></p><br>
-	 
-<p>Para modulações mono, isto é, de apenas um canal, a função de onda é apenas uma e é considerada como vertical ou horizontal dependendo do tipo de modulação:</p>
-	    <p>f(t) = y(t) - modulação vertical</p>
-	    <p>f(t) = x(t) - modulação horizontal</p>
-<p>No caso da modulação estéreo, a função g(t) final é dada por uma combinação linear de dois vetores. No caso de áudio, um representa o lado esquerdo e o outro o direito:</p>
-	<p>g(t) = [x(t), y(t)] em que:</p>
-	<p>x(t) = L(t0 - R(t);</p>
-	<p>y(t) = L(t) + R(t)</p>
-<p>É possível adicionar mais canais para se igualar ao Dolby 5.1, por exemplo, que utiliza 6 canais. Para isso, precisaríamos utilizar 3 agulhas (cada uma com dois canais) ou utilizar uma função perfil e séries de Fourier para mapear todas as funções nos dois canais, conforme decrito abaixo:
-</p>
-	    <p><img src="Capturar4.PNG" alt="funções" ></p><br>
-	    <p><img src="Capturar5.PNG" alt="funções" ></p><br>
-<p>Ambas as soluções são complexas
-Para as agulhas, teríamos que ter vinis maiores ou ranhuras menores (na casa de centenas de nanômetros) o que poderia invibilizar a comercialização.
-Já para o mapeamento de funções, seria necessário um transdutor contínuo na direção transversa, o que possivelmente precisaria de quantização e inviabilizaria a comercialização também
+<p>Para modulações mono, isto é, de apenas um canal, a função de onda é apenas uma e é considerada como vertical ou horizontal dependendo do tipo de modulação:
+f(t) = y(t) - modulação vertical
+f(t) = x(t) - modulação horizontal
+No caso da modulação estéreo, a função g(t) final é dada por uma combinação linear de dois vetores. No caso de áudio, um representa o lado esquerdo e o outro o direito:
+g(t) = [x(t), y(t)] em que:
+	x(t) = L(t0 - R(t);
+	y(t) = L(t) + R(t)
 </p>
 	    
 	  <h4><strong>CD&nbsp;</strong></h4>
