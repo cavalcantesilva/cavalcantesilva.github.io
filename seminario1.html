@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Página de equipe</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    
+    width:100%; 
+    float:left; 
+    text-align:center; 
+}
+li {
+    padding-right: 20px;
+    display: inline-block;
+    list-style:none;
+}
+li .mymenu {
+   font-family: 'open_sansbold';
+   font-size:1.6em;
+   text-decoration: none;
+   color:#4c4c4c;
+   -webkit-border-box: 0 1px 0 0 #4c4c4c;
+   border-bottom: 4px solid transparent;
+   -webkit-transition: border-bottom .3s linear;
+}
+li .mymenu:hover {
+    
+    border-bottom:4px solid #4c4c4c;
+}
+
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+	
+/* CORES DAS IMAGENS */
+	
+#imgColorida{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%);
+     
+}
+ 
+#imgColorida:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+ 
+#imgCinza:hover{
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns="\'http://www.w3.org/2000/svg\'"><filter id="\'grayscale\'"><feColorMatrix type="\'matrix\'" values="\'0.3333" 0.3333="" 0="" 1="" 0\'=""></feColorMatrix></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}	
+	
+	
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Atividades de laboratório</h2>
+</header>
+
+  <ul>
+    <li><a href="index.html" class="mymenu" title="Home">Home</a></li>
+    <li><a href="atividade1.html" class="mymenu" title="Atividade 1">Atividade 1</a></li>
+    <li><a href="atividade2.html" class="mymenu" title="Atividade 2">Atividade 2</a></li>
+    <li><a href="atividade3.html" class="mymenu" title="Atividade 3">Atividade 3</a></li>
+    <li><a href="atividade4.html" class="mymenu" title="Atividade 4">Atividade 4</a></li>
+    <li><a href="atividade5.html" class="mymenu" title="Atividade 5">Atividade 5</a></li>
+    <li><a href="atividade6.html" class="mymenu" title="Atividade 6">Atividade 6</a></li>
+    <li><a href="atividade7.html" class="mymenu" title="Atividade 7">Atividade 7</a></li>
+    <li><a href="seminario1.html" class="mymenu" title="Seminário 1">Seminário 1</a></li>
+    <li><a href="seminario2.html" class="mymenu" title="Seminário 2">Seminário 2</a></li>
+  </ul>
+
+ <nav>
+<section> 
+  <article>
+
+	  <h2><strong>Seminário 1&nbsp;</strong></h2>
+
+	  <p><strong>Parte 1 - Testes de Acuidade Visual na Comunidade Externa:</strong></p><br>
+	  <p>Para a realização dos testes, foi proposto uma pesquisa na qual os participantes iriam reagir dando preferência à fotos de locais turísticos. Foram mostradas duas fotos de um mesmo ambiente, sendo uma tratada e a outra não. As fotos tratadas eram mais trabalhadas em cores e composição. Para ter uma maior abrangência, foram 3 locais frios e 3 locais quentes. Além disso, a pesquisa buscou saber qual era a preferência de clima para viajar e a faixa etária dos participantes. 
+    
+    <p>
+	 <br>
+	  Abaixo temos os resultados de faixa etária e preferência de clima, depois temos as imagens de todos os locais e quais foram as preferências.<br><br>
+	    <br><br>
+      <i><b>Preferências de climas e de fotos</b></i>
+    <p><img src="Extensionista1.PNG" alt="Pesquisa de faixa etária e preferência de clima" width="350"></p>
+    <p><img src="Extensionista2.PNG" alt="Imagens tratadas e não tratadas - locais quentes" width="350"></p>
+    <p><img src="Extensionista3.PNG" alt="Imagens tratadas e não tratadas - locais frios" width="350"></p>
+    <p><img src="Extensionista4.PNG" alt="Resultados quentes" width="350"></p>
+    <p><img src="Extensionista5.PNG" alt="Resultados frios" width="350"></p>
+	
+
+	  <br><br>
+ <p><strong>Parte 2 - Como o tratamento de imagens influencia na decisão de compra de viagens e hospedagens :</strong></p><br>
+    <p>Descrição </p>
+    
+    
+	  <h4><strong>Rádio&nbsp;</strong></h4>
+	   <p>Surgindo em 1896, podemos concentrar o mesmo como modelo de sistemas de transmissão da informação, o canal é responsável por fazer a ligação entre o transmissor e receptor; e pode ser do tipo não guiado, como a atmosfera, ou do tipo guiado, como os cabeamentos.
+Com isso, a modulação define-se por uma técnica de conversão de sinais para fins de transmissão, a qual recebe duas entradas, informação e portadora, e fornece um sinal de saída para o transporte da informação. A modulação tem por características a redução de ruído, de interferências e a facilidade de irradiação eletromagnética. Já a demodulação se dá pelo processo inverso da modulação, onde sua finalidade é recuperar a informação no receptor de destino.
+</p> 
+    <p><img src="radio1.png" alt="Processo de modulção, transmissão e demodulação de ondas de rádio" ></p>
+    <p> Nós temos dois tipos de modulação. Na modulação de amplitude (AM), a onda de rádio portadora é gerada com amplitude e freqüência constantes. Depois disso, a onda portadora é modificada pela introdução de uma onda, proveniente do microfone. As variações de amplitude da onda proveniente do microfone ficam, então, “impressas” sobre a onda portadora. O processo de produção do sinal que é efetivamente enviado pela antena transmissora é chamado modulação. As estações emissoras de ondas de rádio que se utilizam da modulação de amplitude para transmitir informações são chamadas de estações de rádio AM (ou Amplitude Modulada).
+No caso das emissões de FM, o sinal modulador interfere na produção do sinal portador produzindo variações em sua frequência. A modificação na frequência da onda portadora é determinada tanto pela amplitude quanto pela própria freqüência do sinal proveniente do microfone. O sinal resultante ou “sinal modulado” é diferente do que se obtém na modulação do tipo AM. Na modulação FM o sinal modulado apresenta uma amplitude constante.
+
+tanto na modulação por amplitude quanto na modulação por freqüência, os sinais elétricos provenientes do microfone têm freqüência muito menor que a freqüência do sinal portador.
+A enorme diferença entre as freqüências do sinal portador e do sinal modulador é importante, pois facilita a “separação” desses dois sinais pelo aparelho receptor. Essa “separação” ou decomposição recebe o nome de demodulação. Com a demodulação, o sinal modulador produzido pelo microfone do locutor, lá na estação emissora de rádio, pode ser amplificado e conduzido ao alto-falante do aparelho receptor.
+ </p>
+    <p><img src="am.png" alt="Ondas AM" ></p>
+    <p><img src="fm.png" alt="Ondas FM" ></p>
+	  
+    <p> Além da codificação de fonte, temos a codificação de canal, também chamada de detecção e correção de erros, que é a codificação de sinais de informação que diminuem a taxa de erro de bit no canal de transmissão.
+São dois os tipos de códigos corretores e detectores de erros: código de bloco e código cíclico/convolucional. A potencialidade desses códigos foi instituída a partir do Teorema da Codificação de Shannon, para um canal ruidoso:
+“Para qualquer canal sem memória, cuja entrada é um alfabeto discreto, existem códigos com taxa de informação R (nats/símbolo), com palavras de comprimento n dígitos, para os quais a probabilidade de erro, para o caso de decodificação por máxima verossimilhança, é limitada por Pe < e1-nE(R), em que E(R)>0, 0≤R<C, uma função convexa-U, decrescente, especificada pelas probabilidades de transição do canal; C é a capacidade do canal.” </p>
+	  
+	  <h4><strong>Vinil&nbsp;</strong></h4>
+	   <p> O vinil é uma mídia de armazenamento que surge na década de 50 para substituir os antigos discos de cera ou borracha que foram empregados no começo do século XX. É um tipo de tecnologia que teve seu início de desenvolvimento com os cilindros de gravação de Edison.
+</p> 
+	    <p><img src="vinil.jpg" alt="vinil" ></p><br> 
+<p>Funciona basicamente utilizando uma haste com uma agulha em uma ponta e um imã dentro de um recepiente com espiras na outra.
+A forma de onda do áudio gravado é literalmente impressa no disco em uma espiral de 6 micrômetros. A agulha é sensível às variações de movimento, o que faz o imã na outra extremidade se movimentar e gerar um sinal elétrico que depois é transmitido em um aparelho de som.
+Existem três tipos de modulação (maneiras de se imprimir a onda) para o vinil: Vertical, horizontal e ambas combinadas. A combinação das duas possibilita o som estéreo.
+</p>
+	    <p><img src="Capturar2.PNG" alt="Modulações" ></p><br>
+	    <p><img src="Capturar3.PNG" alt="haste" ></p><br>
+<p>Para modulações mono, isto é, de apenas um canal, a função de onda é apenas uma e é considerada como vertical ou horizontal dependendo do tipo de modulação:
+f(t) = y(t) - modulação vertical
+f(t) = x(t) - modulação horizontal
+No caso da modulação estéreo, a função g(t) final é dada por uma combinação linear de dois vetores. No caso de áudio, um representa o lado esquerdo e o outro o direito:
+g(t) = [x(t), y(t)] em que:
+	x(t) = L(t0 - R(t);
+	y(t) = L(t) + R(t)
+</p>
+	    
+	  <h4><strong>CD&nbsp;</strong></h4>
+	   <p> O CD é uma mídia de armazenamento de música, que surge, principalmente, para substituir os discos de Vinil na indústria fonográfica.
+		   Os primeiros Projetos que originaram essa mídia surgem na década de 70, em uma parceria entre as empresas Phillips e SONY.
+</p> 
+	    
+	    <p><img src="CD1.png" alt="CD1" ></p><br>
+	    <p><img src="CD2.png" alt="CD2" ></p><b
+	    <p><img src="CD3.png" alt="CD3" ></p><b
+						    
+<h4><strong>MP3&nbsp;</strong></h4>
+<p>O conhecido codec MP3 é um exemplo de uma técnica de codificação com perdas. Todas as técnicas de compressão do MP3 removem o áudio de fora da faixa de áudio de um humano normal e arrumam a quantidade de compressão por meio do ajuste da taxa de bits efetiva do codec MP3 ou da quantidade de bits por segundo para armazenar os dados do áudio.
+</p>
+	<p><img src="mp3.JPG" alt="mp3" ></p><br>
+
+<p>Por exemplo, um CD estéreo que usa PCM linear de 16 bits tem uma taxa de bits efetiva de: 1441 kbps. A compressão do MP3 remove esses dados digitais usando taxas de bits, como 320 kbps, 128 kbps ou 96 kbps, por exemplo, com a degradação resultante da qualidade de áudio. O MP3 também é compatível com taxas de bits variáveis, que podem comprimir o áudio ainda mais. Ambas as técnicas perdem informações e podem afetar a qualidade. A maioria das pessoas consegue distinguir entre 96 kbps ou 128 kbps de música MP3 codificada, por exemplo.
+	</p>
+	<h4><strong>Streaming&nbsp;</strong></h4>
+	
+<p>O melhor codec para streaming de áudio é o AAC+.
+Este codec usa menos banda para entregar áudio de qualidade superior ao MP3 e é suportado em todas as plataformas.
+Este formato é uma extensão do AAC convencional, que foi criado para ser uma sucessão do MP3, ele é otimizado para uso em aplicações de baixa taxa de bits, como a transmissão de áudio. Ele usa a tecnologia de Réplica de Banda Espectral, para ressaltar os codecs de voz e também a eficiência da compressão.
+	</p>
+	
+	<p><img src="streaming.JPG" alt="mp3" ></p><br>
+
+<p> Além disso, para aumentar a eficiência da compressão de estéreos, ele utiliza ainda o PS (Parametric Stereo, traduzido, Estéreo Paramétrico). Este formato normalmente é suportado por dispositivos (portáteis e não portáteis) e softwares que também são capazes de compreender o AAC convencional.
+	</p>
+<p>A taxa de compressão no AAC é de 96 Kbps e oferece a mesma qualidade que o MP3, com compressão de 128 Kbs. Isso significa que os arquivos AAC têm melhor qualidade e menor tamanho.
+	</p>
+	    
+     	  <h4><strong>Referências:&nbsp;</strong></h4> 
+      <p>A. J. Viterbi, "When Not to Spread Spectrum - A Sequel". IEEE Communications Magazine, 23(4):12-17 (1985).</p>
+	<p> "Introdução a codificação de áudio". Google Cloud, (2022).</p>
+</nav>
+
+<style>
+div.box {
+	width: 260px;
+	display: inline-block;
+}
+</style>
+	
+  </article>
+</section>
+
+<footer>
+  <p>Santo André</p>
+  <p>2022 </p>
+</footer>
+
+</body>
+</html>
